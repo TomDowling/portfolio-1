@@ -9,7 +9,7 @@ const encode = data => {
 class Contact extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = {name: "", email: "", type: "Member", message: ""}
+		this.state = {name: "", email: "", message: ""}
 	}
 
 	handleSubmit = e => {
@@ -18,7 +18,7 @@ class Contact extends React.Component {
 			headers: {"Content-Type": "application/x-www-form-urlencoded"},
 			body: encode({"form-name": "contact", ...this.state})
 		})
-			.then(() => alert("Thank you for the message!"))
+			.then(() => alert("Thank you for the message! I will be in touch shortly."))
 			.catch(error => alert(error))
 
 		e.preventDefault()
@@ -34,7 +34,6 @@ class Contact extends React.Component {
 				<p>Have a question? Interested in opportunities?</p>
 				<div className="form-group">
 					<input
-						className="form-control"
 						type="text"
 						name="name"
 						placeholder="Name"
@@ -44,7 +43,6 @@ class Contact extends React.Component {
 				</div>
 				<div className="form-group">
 					<input
-						className="form-control"
 						type="email"
 						name="email"
 						placeholder="Email"
@@ -52,18 +50,8 @@ class Contact extends React.Component {
 						onChange={this.handleChange}
 					/>
 				</div>
-				<div className="form-group d-none">
-					<input
-						className="form-control"
-						type="text"
-						name="type"
-						placeholder="Email"
-						value={type}
-					/>
-				</div>
 				<div className="form-group">
 					<textarea
-						className="form-control"
 						rows="5"
 						name="message"
 						placeholder="Message"
@@ -71,8 +59,8 @@ class Contact extends React.Component {
 						onChange={this.handleChange}
 					/>
 				</div>
-				<div className="form-group">
-					<button className="btn btn-secondary" type="submit">
+				<div>
+					<button type="submit">
 						Send
 					</button>
 				</div>

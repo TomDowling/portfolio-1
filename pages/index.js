@@ -1,6 +1,10 @@
 import Head from "../Components/Layout/Markup/Head";
 import Header from "../Components/Layout/Header/Header";
-import Modal from "../Components/Modules/Modal/Modal"
+import DSModal from "../Components/Modules/Modal/DSModal";
+import RCModal from "../Components/Modules/Modal/RCModal";
+import RDModal from "../Components/Modules/Modal/RDModal";
+import SCBFModal from "../Components/Modules/Modal/SCBFModal";
+import Contact from "../Components/Forms/Contact";
 import "../Styles/styles.scss";
 
 export default () => (
@@ -50,25 +54,19 @@ export default () => (
 <section id="works">
   <div className="container">
     <h2 className="blue">Portfolio</h2>
-    <div className="image-container">
-      <div className="img-display">
-        <img src="https://raw.githubusercontent.com/RidhoBeteer/SIA-Design/master/screenshot/1.JPG" alt="Sistem Informasi Alumni" className="img-thumbnail" />
-      </div>
-    </div>
-    <Modal />
+    <DSModal />
+    <RDModal /> 
+    {/* 
+    <RCModal />
+    <SCBFModal />
+    */}
   </div>
 </section>
 <section id="contact">
   <div className="container">
     <div className="form-container">
       <h2 className="pink">Get In Touch</h2>
-      <form>
-        <input type="text" placeholder="Name" /><br />
-        <input type="email" placeholder="Email" /><br />
-        <input type="text" placeholder="Subject" /><br />
-        <textarea placeholder="Message"></textarea><br />
-        <button>Send Message</button>
-      </form>
+      <Contact />
     </div>
   </div>
 </section>
