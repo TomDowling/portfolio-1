@@ -27,11 +27,9 @@ class Contact extends React.Component {
 	handleChange = e => this.setState({[e.target.name]: e.target.value})
 
 	render() {
-		const {name, email, type, message} = this.state
+		const {name, email, message} = this.state
 		return (
 			<form onSubmit={this.handleSubmit} id="contact">
-				<h3 class="text-center mb-0">Contact us</h3>
-				<p>Have a question? Interested in opportunities?</p>
 				<div className="form-group">
 					<input
 						type="text"
