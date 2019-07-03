@@ -18,18 +18,21 @@ export default class MyModal extends React.Component {
     const { open } = this.state;
     let { title } = this.props
     return (
-      <div class="portfolio-modal">
+      <div class="portfolio-modal col-md-4">
         <div onClick={this.onOpenModal}>
           <img src="https://raw.githubusercontent.com/RidhoBeteer/SIA-Design/master/screenshot/1.JPG" alt="Site Screenshot" className="img-thumbnail" />
           <h3 className="title">Digital Space</h3>
+          <i class="fas fa-plus"></i>
         </div>
         <Modal open={open} onClose={this.onCloseModal} center>
+        <div className="portfolio-modal open">
           <h3 className="title">Digital Space</h3>
           <img src="https://raw.githubusercontent.com/RidhoBeteer/SIA-Design/master/screenshot/1.JPG" alt="Site Screenshot" className="img-thumbnail" />
           <p>This is my own site that I use when I do freelancing work.</p>
           <p><span className="label">Website: </span><Link><a href="https://digital-space.io" target="_blank">Digital-Space</a></Link></p>
           <p><span className="label">Release Date: </span><span className="bold">July 2018</span></p>
           <p><span className="label">Service/s: </span><span className="bold">Web Design, Hosting</span></p>
+          </div>
         </Modal>
       </div>
     );

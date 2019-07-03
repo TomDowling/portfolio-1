@@ -54,12 +54,12 @@ export default () => (
 <section id="works">
   <div className="container">
     <h2 className="blue">Portfolio</h2>
-    <DSModal />
-    <RDModal /> 
-    {/* 
-    <RCModal />
-    <SCBFModal />
-    */}
+    <div className="row">
+      <DSModal />
+      <RDModal /> 
+      <RCModal />
+      <SCBFModal />
+    </div>
   </div>
 </section>
 <section id="contact">
