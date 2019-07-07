@@ -307,10 +307,12 @@ html {
 	}
 }
 
-#works .container {
-	padding-left: 5rem;
+#works, #home {
+	.container {
+		padding-left: 5rem;
 
-	@include bp(M) {
-		padding-left: 0;
+		@include bp(M) {
+			padding-left: 0;
+		}
 	}
 }
