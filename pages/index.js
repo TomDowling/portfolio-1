@@ -35,7 +35,7 @@ export default () => (
   <div className="container">
     <div className="text-container">
       <h2 className="blue">Little About Me</h2>
-      <p>I'm Tom Dowling. A former Digital Marketing and Social Media apprentice at 3AAA. I created my first website when I was in 16 for an IT AS-Level task, a Flat HTML and CSS site for a fish and chip shop.</p>
+      <p>I'm Tom Dowling. A former Digital Marketing and Social Media apprentice at 3AAA. I created my first website when I was in 16 for an IT AS-Level task, a Flat HTML and CSS site for a fish and chip shop. Once I started my apprenticeship I was building websites withing Drupal 7/9 as the main CMS. going onto React in my recent years.</p>
     </div>
   </div>
 </section>

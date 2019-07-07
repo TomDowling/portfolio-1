@@ -5,7 +5,7 @@ export default () => (
 		<title>Tom Dowling</title>
 		<meta
 			name="description"
-			content="Revlic - App based nightlife event promoters! With Exclusive discounts at venues"
+			content="Tom Dowling - A Front End Developer based in Bounremouth UK. A Javascript Developer who enjoys using frameworks such as React. Has a CMS background in Drupal."
 		/>
 		<link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
 		<link
