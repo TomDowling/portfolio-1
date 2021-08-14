@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
-
 import Link from 'next/link';
-
 import { AppConfig } from '../utils/AppConfig';
+import Header from '../components/layout/header/header';
 
 type IMainProps = {
     meta: ReactNode;
@@ -12,6 +11,8 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
     <div className="antialiased w-full text-gray-700">
         {props.meta}
+
+        <Header />
         
         <div className="max-w-screen-md mx-auto">
             <div className="border-b border-gray-300">
