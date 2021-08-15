@@ -1,21 +1,55 @@
 @tailwind base;
-
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
-
 @tailwind components;
-
 @tailwind utilities;
 
+
+
+:root {
+    --color-primary: #86C232;
+}
+
+/* a {
+    @apply text-blue-700;
+} */
+
+/* a:hover {
+    @apply border-b-2 border-blue-700;
+} */
+
+
 .content p {
-  @apply my-6;
+    @apply my-6;
 }
 
 .content ul {
-  @apply my-6;
+    @apply my-6;
+}
+
+
+
+.no-hover:hover {
+    border: 0;
+}
+
+header {
+    padding: 10px 0;
+
+    z-index: 999;
+}
+
+header.sticky {
+    position: sticky;
+    top: 0;
+
+    box-shadow: 0px -5px 15px 20px rgb(255, 255, 255, 0.3);
+    box-shadow: 0px -5px 15px 20px rgb(0, 0, 0, 0.05);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+/* Temp */
+.page-title {
+    min-height: 200vh;
 }
