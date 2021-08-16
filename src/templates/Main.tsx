@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from 'react';
-import Link from 'next/link';
 import { AppConfig } from '../utils/AppConfig';
+import Header from '../components/layout/header/header';
+import Footer from '../components/layout/footer/footer';
 
 type IMainProps = {
     meta: ReactNode;
@@ -28,6 +29,11 @@ const Main = (props: IMainProps) => (
         {props.meta}
 
         <div id="top"></div>
+        <Header />
+
+        {props.children}
+
+        <Footer />
     </div>
 );
 
