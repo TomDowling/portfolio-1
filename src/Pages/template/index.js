@@ -1,7 +1,9 @@
 import React from 'react';
 
 /*  Components  */
-import PageContainer from "../../Components/Layout/PageContainer";
+import {
+    PageContainer
+} from "../../Components";
 
 
 

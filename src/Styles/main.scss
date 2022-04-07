@@ -14,9 +14,10 @@
 */
 @import "Base/normalize";
 @import "Base/variables";
+
+@import "Base/helpers.scss";
 @import "Base/mixins";
 @import "Base/typography";
-
 
 
 /*
@@ -25,3 +26,6 @@
 *   @import "Components/";
 *   =========================
 */
+@import "Components/Layout/header";
+
+@import "Components/Section/Banner/homepage-banner";

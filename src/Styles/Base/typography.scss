@@ -19,3 +19,24 @@
 *   Body Text
 *   =========================
 */
+body {
+    // font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/*
+*   =========================
+*   Links
+*   =========================
+*/
+a {
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

@@ -1,7 +1,11 @@
 import React from 'react';
 
 /*  Components  */
-import PageContainer from "../Components/Layout/PageContainer";
+import {
+    HomepageBanner,
+    PageContainer,
+    Header,
+} from "../Components";
 
 
 
@@ -14,7 +18,8 @@ export default function Home() {
 
     return (
         <PageContainer pageMeta={pageMeta}>
-            <p>Home</p>
+            <Header />
+            <HomepageBanner />
         </PageContainer>
     )
 }
