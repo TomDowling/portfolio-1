@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import logo from '../../../../public/logo.png';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -6,15 +6,17 @@ import Image from 'next/image';
 
 export function Header() {
     const headerScroll = () => {
-        window.onscroll = () => {
-            if(window.pageYOffset > 5) {
-                document.getElementById("header").classList.add("scroll");
+        useEffect(() => {
+            window.onscroll = () => {
+                if(window.pageYOffset > 5) {
+                    document.getElementById("header").classList.add("scroll");
+                }
+    
+                if(window.pageYOffset < 5) {
+                    document.getElementById("header").classList.remove("scroll");
+                }
             }
-
-            if(window.pageYOffset < 5) {
-                document.getElementById("header").classList.remove("scroll");
-            }
-        }
+        }, [])
     }
 
     return (

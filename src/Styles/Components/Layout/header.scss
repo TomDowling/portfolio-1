@@ -61,7 +61,12 @@ header .main-menu {
         list-style-type: none;
 
         a {
-            background-color: red;
+            padding: $spacing-sm;
+
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            // background-color: red;
         }
     }
 }
