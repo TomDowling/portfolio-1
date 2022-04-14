@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 
 export function Header() {
-    const headerScroll = () => {
+    const HeaderScroll = () => {
         useEffect(() => {
             window.onscroll = () => {
                 if(window.pageYOffset > 5) {
@@ -20,7 +20,7 @@ export function Header() {
     }
 
     return (
-        <header id="header" onScroll={headerScroll()}>
+        <header id="header" onScroll={HeaderScroll()}>
             <div className="container">
                 <Link href="/#top">
                     <a className="no-hover inline-flex">
