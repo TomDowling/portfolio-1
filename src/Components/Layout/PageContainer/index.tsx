@@ -1,7 +1,26 @@
+import React, { ReactNode } from "react";
 import Head from "next/head";
 
 
 
+/*
+*   Interfaces
+*/
+interface IPageMeta {
+    title?: string,
+    description?: string
+}
+
+export interface IPageContainerProps {
+    children: ReactNode,
+    pageMeta: IPageMeta
+}
+
+
+
+/*
+*   Component
+*/
 export function PageContainer(props) {
     const { pageMeta, children } = props;
 
@@ -10,11 +29,6 @@ export function PageContainer(props) {
             <Head>
                 <title>{pageMeta?.title || ""} | Tom Dowling</title>
                 <meta name="description" content={pageMeta?.description || ""} />
-
-                {/* Google Fonts */}
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
             </Head>
 
             <>

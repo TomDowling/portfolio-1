@@ -1,2 +1,2 @@
 export * from "./PageContainer";
-export* from "./Header";
+export * from "./Header";

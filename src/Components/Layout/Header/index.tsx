@@ -24,7 +24,7 @@ export function Header() {
             <div className="container">
                 <Link href="/#top">
                     <a className="no-hover inline-flex">
-                        <Image className="logo" src={logo} alt="Tom Dowling's Logo" width="60" height="60" />
+                        <Image className="logo" src={logo} alt="Tom's Logo" width="60" height="60" />
                     </a>
                 </Link>
 

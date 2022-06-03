@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+
+/*  Hooks & State  */
+import {
+    useEffectOnce
+} from "../Hooks";
 
 /*  Components  */
 import {
     HomepageBanner,
     PageContainer,
     Header,
+    IntroSection,
 } from "../Components";
 
 
@@ -15,13 +21,12 @@ export default function Home() {
     const getUser = async () => {
         const response = await fetch("/api/user");
         const data = await response.json();
-        console.log('data', data)
         setUser(data)
     }
 
-    useEffect(() => {
+    useEffectOnce(() => {
         getUser();
-    }, [])
+    })
 
     const pageMeta = {
         title: "Home",
@@ -32,10 +37,15 @@ export default function Home() {
         <PageContainer pageMeta={pageMeta}>
             <Header />
             <HomepageBanner />
+            <IntroSection />
 
-            {user && (
+            <p>Skills</p>
+            <p>Training_Skills</p>
+            <p>Experience_Timeline</p>
+
+            {/* {user && (
                 <h1>{ user.name }</h1>
-            )}
+            )} */}
         </PageContainer>
     )
 }

@@ -14,9 +14,10 @@
 */
 @import "Base/normalize";
 @import "Base/variables";
+@import "Base/mixins";
 
 @import "Base/helpers.scss";
-@import "Base/mixins";
+@import "Base/layout.scss";
 @import "Base/typography";
 
 

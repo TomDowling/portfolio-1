@@ -12,7 +12,46 @@
 *   =========================
 */
 .container {
+    display: flex;
+    
     margin: 0 auto;
 
     max-width: 1200px;
+
+    .left, .right {
+        flex: 1;
+
+        padding: 1rem;
+
+        &.lg {
+            flex: 2;
+        }
+
+        &.xl {
+            flex: 3;
+        }
+
+        &.xxl {
+            flex: 4;
+        }
+    }
+
+    @include for-phone-only {
+        flex-direction: column;
+    }
+}
+
+
+
+/*
+*   Background Colours
+*/
+.bg-black {
+    color: $color-white;
+
+    background-color: $color-black;
+}
+
+.bg-grey {
+    background-color: $color-grey-1;
 }
