@@ -7,11 +7,11 @@ export function HomepageBanner() {
     return (
         <section className="custom-component cat-section homepage-banner">
             <div className="content">
-                <h1>Hello, I'm</h1>
+                <h1>Hello, I&apos;m</h1>
 
                 <h1>
                     <Typed
-                        strings={["Tomo", "Tom Ipsum"]}
+                        strings={["Tomo", "Tom Dowling"]}
                         typeSpeed={50}
                         backSpeed={100}
                         backDelay={200}
