@@ -42,10 +42,6 @@ export default function Home() {
             <p>Skills</p>
             <p>Training_Skills</p>
             <p>Experience_Timeline</p>
-
-            {/* {user && (
-                <h1>{ user.name }</h1>
-            )} */}
         </PageContainer>
     )
 }
