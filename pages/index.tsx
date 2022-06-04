@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 /*  Hooks & State  */
 import {
     useEffectOnce
-} from "../Hooks";
+} from "../src/Hooks";
 
 /*  Components  */
 import {
@@ -11,7 +11,7 @@ import {
     PageContainer,
     Header,
     IntroSection,
-} from "../Components";
+} from "../src/Components";
 
 
 
