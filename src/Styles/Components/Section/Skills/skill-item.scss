@@ -1,0 +1,107 @@
+/*
+*   ==================================================
+*   Skill Item Stylesheet (.skill-item)
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Container
+*   =========================
+*/
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*
+*   =========================
+*   Generic
+*   =========================
+*/
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 25%;
+
+    margin-bottom: 2rem;
+
+    text-align: center;
+
+    .skill-image {
+        width: 4rem;
+        height: 4rem;
+        
+        background-color: $color-black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 2.5rem;
+        border-radius: 1rem;
+
+
+        & + .skill-title {
+            margin-top: 1rem;
+        }
+    }
+
+    &.html .skill-image {
+        background-color: rgba($color-html-orange, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/html.svg);
+    }
+
+    &.css .skill-image {
+        background-color: rgba($color-css-blue, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/css.png);
+    }
+
+    &.javascript .skill-image {
+        background-color: rgba($color-javascript-yellow, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/javascript.svg);
+    }
+
+    &.typescript .skill-image {
+        background-color: rgba($color-typescript-blue, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/typescript.png);
+    }
+
+    &.react .skill-image {
+        background-color: rgba($color-react-blue, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/react.png);
+    }
+
+    &.sass .skill-image {
+        background-color: rgba($color-sass-pink, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/sass.png);
+    }
+
+    &.less .skill-image {
+        background-color: rgba($color-less-blue, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/less.png);
+    }
+
+    &.git .skill-image {
+        background-color: rgba($color-git-orange, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/git.png);
+    }
+
+    &.state-management .skill-image {
+        background-color: rgba($color-redux-purple, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/redux.png);
+    }
+
+    &.next-js .skill-image {
+        background-color: rgba($color-black, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/next.png);
+    }
+
+    &.firebase .skill-image {
+        background-color: rgba($color-firebase-yellow, 0.2);
+        background-image: url(../../../../../public/assets/images/skills/firebase.svg);
+    }
+}

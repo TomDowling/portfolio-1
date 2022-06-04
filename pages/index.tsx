@@ -11,6 +11,8 @@ import {
     PageContainer,
     Header,
     IntroSection,
+    SkillsSection,
+    CareerSection
 } from "../src/Components";
 
 
@@ -38,10 +40,8 @@ export default function Home() {
             <Header />
             <HomepageBanner />
             <IntroSection />
-
-            <p>Skills</p>
-            <p>Training_Skills</p>
-            <p>Experience_Timeline</p>
+            <SkillsSection />
+            <CareerSection />
         </PageContainer>
     )
 }
