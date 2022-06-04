@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { UIEvent, useEffect } from 'react';
 import logo from '../../../../public/logo.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
 
 export function Header() {
-    const HeaderScroll = () => {
+    function HeaderScroll() {
         useEffect(() => {
             window.onscroll = () => {
+                console.log('onScroll...');
+
                 if(window.pageYOffset > 5) {
                     document.getElementById("header").classList.add("scroll");
                 }
@@ -20,6 +22,7 @@ export function Header() {
     }
 
     return (
+        // @ts-ignore
         <header id="header" onScroll={HeaderScroll()}>
             <div className="container">
                 <Link href="/#top">
