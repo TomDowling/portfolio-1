@@ -8,8 +8,6 @@ export function Header() {
     function HeaderScroll() {
         useEffect(() => {
             window.onscroll = () => {
-                console.log('onScroll...');
-
                 if(window.pageYOffset > 5) {
                     document.getElementById("header").classList.add("scroll");
                 }
