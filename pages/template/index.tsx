@@ -3,7 +3,7 @@ import React from 'react';
 /*  Components  */
 import {
     PageContainer
-} from "../../Components";
+} from "../../src/Components";
 
 
 
