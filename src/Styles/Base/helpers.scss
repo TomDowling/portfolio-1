@@ -12,37 +12,38 @@
 *   =========================
 */
 .container {
-    display: flex;
-    gap: 1rem;
-    
     margin: 0 auto;
 
+    width: 100%;
     max-width: 1200px;
 
-    .inner {
+    > .inner {
+        display: flex;
+        gap: 1rem;
+
         width: 100%;
-    }
-
-    .left, .right {
-        flex: 1;
-
-        // padding: 1rem;
-
-        &.lg {
-            flex: 2;
+        
+        > .left, > .right {
+            flex: 1;
+    
+            // padding: 1rem;
+    
+            &.lg {
+                flex: 2;
+            }
+    
+            &.xl {
+                flex: 3;
+            }
+    
+            &.xxl {
+                flex: 4;
+            }
         }
-
-        &.xl {
-            flex: 3;
+        
+        @include for-phone-only {
+            flex-direction: column;
         }
-
-        &.xxl {
-            flex: 4;
-        }
-    }
-
-    @include for-phone-only {
-        flex-direction: column;
     }
 }
 
@@ -72,6 +73,10 @@
 */
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 

@@ -30,6 +30,12 @@ header {
     }
 }
 
+@include for-phone-only {
+    header {
+        display: none;
+    }
+}
+
 
 
 /*
