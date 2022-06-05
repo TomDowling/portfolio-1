@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, ReactNode } from "react";
 
 /*  Hooks & State  */
 import { useEffectOnce } from "../../../../Hooks";
@@ -24,7 +24,7 @@ export interface ITimelineItemProps {
     title: string,
     company: string,
     dates: string,
-    description: string,
+    description: ReactNode,
     startDate: Date,
     endDate: Date,
     length?: any,
@@ -73,7 +73,7 @@ export function TimelineItem(props: ITimelineItemProps) {
 
     function MonthText() {
 
-        if ( dateRange?.month === 0) {
+        if ( dateRange?.months === 0) {
             return
         } else if ( dateRange?.months === 1) {
             return (
