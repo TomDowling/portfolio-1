@@ -32,8 +32,8 @@ export default function Home() {
     })
 
     const pageMeta = {
-        title: "Home",
-        description: "Home Desc"
+        title: "Portfolio",
+        description: "I am Tom Dowling (aka Tomo) a frontend developer who specialises in React. Based in Bournemouth I work with everything related to the frontend from HTML to node."
     }
 
     return (
