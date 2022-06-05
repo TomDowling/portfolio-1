@@ -11,11 +11,8 @@ export function HomepageBanner() {
 
                 <h1>
                     <Typed
-                        strings={["Tomo", "Tom Dowling"]}
+                        strings={["Tom Dowling"]}
                         typeSpeed={50}
-                        backSpeed={100}
-                        backDelay={200}
-                        smartBackspace
                         />
                 </h1>
             </div>

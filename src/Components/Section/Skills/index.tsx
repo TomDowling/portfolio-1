@@ -24,10 +24,11 @@ export interface ISkillsSectionProps {
 export function SkillsSection(ISkillsSectionProps) {
 
     return (
-        <section className="custom-component cat-section skills-section bg-grey" id="about">
+        <section className="custom-component cat-section skills-section bg-grey" id="skill">
             <div className="container">
+                <h2 className="section-title text-center">Skills</h2>
+                
                 <div className="inner">
-                    <h2 className="section-title text-center">Skills</h2>
                 
                     <div className="skills-row">
                         <SkillItem
