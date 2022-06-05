@@ -1,0 +1,28 @@
+/*
+*   ==================================================
+*   Contact Item Stylesheet (.contact-item)
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Container
+*   =========================
+*/
+.contact-item a {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.25rem;
+
+    .text {
+        margin-left: 1rem;
+    }
+
+}
+
+.contact-item + .contact-item {
+    margin-top: 2rem;
+}

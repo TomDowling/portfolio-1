@@ -1,0 +1,52 @@
+/*
+*   ==================================================
+*   Variables Stylesheet
+*   ==================================================
+*/
+
+
+
+/*
+*   =========================
+*   Colours
+*   =========================
+*/
+$color-primary: #00CCFF;
+
+$color-black: #000;
+$color-white: #FFF;
+$color-grey-1: #E8E8E8;
+
+$color-react-blue: #61DBFB;
+$color-css-blue: #214ce5;
+$color-less-blue: #214674;
+$color-typescript-blue: #2d79c7;
+
+$color-html-orange: #E34F26;
+$color-javascript-yellow: #e9ca32;
+$color-git-orange: #f05033;
+$color-firebase-yellow: #fcca3f;
+
+$color-sass-pink: #cd669a;
+$color-redux-purple: #7749bd;
+
+
+
+/*
+*   =========================
+*   Breakpoints
+*   =========================
+*/
+$spacing: 16px;
+$spacing-sm: calc($spacing / 2);
+
+
+
+/*
+*   =========================
+*   Breakpoints
+*   =========================
+*/
+$bp-s: 480px;
+$bp-m: 600px;
+$bp-l: 992px;
