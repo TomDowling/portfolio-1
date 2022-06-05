@@ -25,7 +25,7 @@ export interface ICareerSectionProps {
 export function CareerSection(ICareerSectionProps) {
 
     return (
-        <section className="custom-component cat-section timeline-section" id="career">
+        <section className="custom-component cat-section timeline-section" id="work-exp">
             <div className="container">
                 <h2 className="section-title text-center">Work History</h2>
 

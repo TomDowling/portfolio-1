@@ -58,30 +58,30 @@ export function TimelineItem(props: ITimelineItemProps) {
 
     function YearText() {
 
-        if ( dateRange.years === 0) {
+        if ( dateRange?.years === 0) {
             return
-        } else if ( dateRange.years === 1) {
+        } else if ( dateRange?.years === 1) {
             return (
-                <>{ dateRange.years } Yr</>
+                <>{ dateRange?.years } Yr</>
             )
         } else {
             return (
-                <>{ dateRange.years } Yrs</>
+                <>{ dateRange?.years } Yrs</>
             )
         }
     }
 
     function MonthText() {
 
-        if ( dateRange.month === 0) {
+        if ( dateRange?.month === 0) {
             return
-        } else if ( dateRange.months === 1) {
+        } else if ( dateRange?.months === 1) {
             return (
-                <>{ dateRange.months } Mo</>
+                <>{ dateRange?.months } Mo</>
             )
         } else {
             return (
-                <>{ dateRange.months } Mos</>
+                <>{ dateRange?.months } Mos</>
             )
         }
     }

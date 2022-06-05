@@ -38,6 +38,20 @@ export function Header() {
                         </Link>
                     </li>
                     <li>
+                        <Link href="/#skills">
+                            <a>
+                                Skills
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/#work-exp">
+                            <a>
+                                Work Experience
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/#contact">
                             <a>
                                 Contact

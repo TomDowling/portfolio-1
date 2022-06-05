@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import portrait from "../../../../public/assets/images/portrait.jpg";
 
 
 
@@ -24,7 +22,7 @@ export interface ISkillsSectionProps {
 export function SkillsSection(ISkillsSectionProps) {
 
     return (
-        <section className="custom-component cat-section skills-section bg-grey" id="skill">
+        <section className="custom-component cat-section skills-section bg-grey" id="skills">
             <div className="container">
                 <h2 className="section-title text-center">Skills</h2>
                 

@@ -12,7 +12,8 @@ import {
     Header,
     IntroSection,
     SkillsSection,
-    CareerSection
+    CareerSection,
+    ContactSection
 } from "../src/Components";
 
 
@@ -42,6 +43,7 @@ export default function Home() {
             <IntroSection />
             <SkillsSection />
             <CareerSection />
+            <ContactSection />
         </PageContainer>
     )
 }

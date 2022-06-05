@@ -40,10 +40,10 @@
                 flex: 4;
             }
         }
-    }
-
-    @include for-phone-only {
-        flex-direction: column;
+        
+        @include for-phone-only {
+            flex-direction: column;
+        }
     }
 }
 

@@ -35,4 +35,34 @@
             color: #FFFFFF;
         }
     }
+
+    .logos {
+        display: flex;
+        gap: 1rem;
+
+        margin-top: 1rem;
+
+        a {
+            display: flex;
+
+            width: 60px;
+            height: 60px;
+
+            background-color: transparent;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            
+            &.github {
+                background-color: $color-white;
+                background-image: url(../../../../../public/assets/images/github.png);
+                background-size: 102%;
+            }
+
+            &.linkedin {
+                background-image: url(../../../../../public/assets/images/linkedin.png);
+            }
+        }
+    }
 }
