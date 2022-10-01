@@ -21,33 +21,59 @@ export function Timeline(ITimelineProps) {
     return (
         <div className="custom-component cat-data timeline">
             <TimelineItem
-                title="Frontend Developer"
-                company="Spike Global Ltd"
-                dates="Sep 2019 - Present"
-                startDate={new Date(2019, 9)}
+                title="Senior Frontend Developer"
+                company="Wordshop"
+                dates="Aug 22 - Present"
+                startDate={new Date(2022, 8)}
                 endDate={new Date()}
-                description={<SpikeText />}
+                description={<WordshopText />}
             />
 
             <TimelineItem
                 title="Frontend Developer"
-                company="LV="
-                dates="10 Jan 25 - 12 Sept 17"
-                startDate={new Date(2018, 4)}
-                endDate={new Date(2019, 9)}
-                description={<LVText />}
+                company="Spike Global Ltd"
+                dates="Sep 19 - Aug 22"
+                startDate={new Date(2019, 9)}
+                endDate={new Date(2022, 8)}
+                description={<SpikeText />}
                 alignRight
             />
 
             <TimelineItem
                 title="Frontend Developer"
+                company="LV="
+                dates="Apr 18 - Sep 19"
+                startDate={new Date(2018, 4)}
+                endDate={new Date(2019, 9)}
+                description={<LVText />}
+            />
+
+            <TimelineItem
+                title="Frontend Developer"
                 company="Moore-Wilson"
-                dates="10 Jan 25 - 12 Sept 17"
+                dates="Oct 15 - Apr 18"
                 startDate={new Date(2015, 10)}
                 endDate={new Date(2018, 4)}
                 description={<MooreWilsonText />}
+                alignRight
             />
         </div>
+    )
+}
+
+function WordshopText() {
+    return (
+        <ul>
+            <li>
+                Leading the frontend team, including setting the coding standards and guidelines for the team to follow
+            </li>
+            <li>
+                Working closely with the designers to improve workflow
+            </li>
+            <li>
+                Learning the whole tech stack and then making improvements to help push the frontend forward as much as possible
+            </li>
+        </ul>
     )
 }
 
