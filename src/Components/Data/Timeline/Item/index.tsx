@@ -74,7 +74,7 @@ export function TimelineItem(props: ITimelineItemProps) {
     function MonthText() {
 
         if ( dateRange?.months === 0) {
-            return
+            return '< 1 Mo'
         } else if ( dateRange?.months === 1) {
             return (
                 <>{ dateRange?.months } Mo</>
