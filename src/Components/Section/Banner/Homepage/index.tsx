@@ -24,12 +24,8 @@ export function HomepageBanner() {
                         />
                 </h1>
                 <div className="logos">
-                    <Link href="https://github.com/TomDowling/">
-                        <a className="github" target="_blank" />
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/dowling-tom/">
-                        <a className="linkedin" target="_blank" />
-                    </Link>
+                    <Link href="https://github.com/TomDowling/" className="github" target="_blank" />
+                    <Link href="https://www.linkedin.com/in/dowling-tom/" className="linkedin" target="_blank" />
                 </div>
             </div>
         </section>

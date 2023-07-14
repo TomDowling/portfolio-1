@@ -23,39 +23,29 @@ export function Header() {
         // @ts-ignore
         <header id="header" onScroll={HeaderScroll()}>
             <div className="container">
-                <Link href="/#top">
-                    <a className="no-hover inline-flex">
-                        <Image className="logo" src={logo} alt="Tom's Logo" width="60" height="60" />
-                    </a>
+                <Link href="/#top" className="no-hover inline-flex">
+                    <Image className="logo" src={logo} alt="Tom's Logo" width="60" height="60" />
                 </Link>
 
                 <ul className="main-menu">
                     <li>
                         <Link href="/#about">
-                            <a>
-                                About
-                            </a>
+                            About
                         </Link>
                     </li>
                     <li>
                         <Link href="/#skills">
-                            <a>
-                                Skills
-                            </a>
+                            Skills
                         </Link>
                     </li>
                     <li>
                         <Link href="/#work-exp">
-                            <a>
-                                Work Experience
-                            </a>
+                            Work Experience
                         </Link>
                     </li>
                     <li>
                         <Link href="/#contact">
-                            <a>
-                                Contact
-                            </a>
+                            Contact
                         </Link>
                     </li>
                 </ul>

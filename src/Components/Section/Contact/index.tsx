@@ -28,20 +28,16 @@ export function ContactSection(IContactSectionProps) {
                 <h2 className="section-title text-center">Contact</h2>
                 
                 <div className="contact-item">
-                    <Link href="tel:+447805601727">
-                        <a className="no-hover inline-flex">
-                            <Image src={phone} alt="Phone Icon" width="60" height="60" />
-                            <div className="text">+447805601727</div>
-                        </a>
+                    <Link href="tel:+447805601727" className="no-hover inline-flex">
+                          <Image src={phone} alt="Phone Icon" width="60" height="60" />
+                          <div className="text">+447805601727</div>
                     </Link>
                 </div>
                 
                 <div className="contact-item">
-                    <Link href="mailto:tomodowling@outlook.com">
-                        <a className="no-hover inline-flex">
-                            <Image src={email} alt="Email Icon" width="60" height="60" />
-                            <div className="text">tomodowling@outlook.com</div>
-                        </a>
+                    <Link href="mailto:tomodowling@outlook.com" className="no-hover inline-flex">
+                          <Image src={email} alt="Email Icon" width="60" height="60" />
+                          <div className="text">tomodowling@outlook.com</div>
                     </Link>
                 </div>
             </div>
