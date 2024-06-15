@@ -21,11 +21,21 @@ export function Timeline(ITimelineProps) {
     return (
         <div className="custom-component cat-data timeline">
             <TimelineItem
+                title="Senior Frontend Developer"
+                company="Cerberus Tech"
+                dates="Mar 24 - Present"
+                startDate={new Date(2024, 3, 1)}
+                endDate={new Date()}
+                description={<CerberusTechText />}
+                alignRight
+            />
+
+            <TimelineItem
                 title="Frontend Lead"
                 company="HonkHonk"
-                dates="Aug 23 - Present"
+                dates="Aug 23 - Feb 24"
                 startDate={new Date(2023, 8, 29)}
-                endDate={new Date()}
+                endDate={new Date(2024, 2, 29)}
                 description={<HonkHonkText />}
             />
 
@@ -77,6 +87,22 @@ export function Timeline(ITimelineProps) {
                 alignRight
             />
         </div>
+    )
+}
+
+function CerberusTechText() {
+    return (
+        <ul>
+            <li>
+                Developing and maintaining the frontend application
+            </li>
+            <li>
+                Helping to standardize the codebase and improve the workflow
+            </li>
+            <li>
+                Working on a large scale enterprise application
+            </li>
+        </ul>
     )
 }
 
